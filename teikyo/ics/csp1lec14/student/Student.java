@@ -9,11 +9,7 @@ public class Student extends Person implements Learner, Settable{
 
 	Study study;
 	
-	public Student(){
-		this.study = new Programming();
-		this.age = 20;
-		this.name = "Hanako";
-	}
+	public Student(){}
 	
 	public Study getStudy(){
         return study;
@@ -36,5 +32,9 @@ public class Student extends Person implements Learner, Settable{
 	public void setValues(String name, int age){
 		this.name = name;
 		this.age = age;
+	}
+
+	public void setStudyName(Study study){
+		this.study = study;
 	}
 }
